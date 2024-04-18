@@ -1,0 +1,19 @@
+﻿<Window x:Class="chistyakovexemen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:chistyakovexemen"
+        mc:Ignorable="d"
+        Title="Хлеб" SizeToContent="WidthAndHeight">
+    <Canvas Height="450" Width="800">
+        <TextBlock Text="Введите вес в кг" FontSize="20" Canvas.Left="215" Canvas.Top="106" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="38" Width="132" Canvas.Left="397" Canvas.Top="100" FontSize="20" Name="Weight"/>
+        <Button Height="38" Width="132" Canvas.Left="331" Canvas.Top="186" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Расчитать" Name="PressBtn" Click="PressBtn_Click"/>
+        <TextBlock Text="Введите цену за кг" FontSize="20" Canvas.Left="215" Canvas.Top="149" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Height="38" Width="132" Canvas.Left="397" Canvas.Top="143" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Name="Price"/>
+        <TextBlock Text="" Name="sum" FontSize="20" Canvas.Left="300" Canvas.Top="252" HorizontalAlignment="Left" VerticalAlignment="Top" TextAlignment="Center"/>
+        <Button Height="38" Width="132" Canvas.Left="658" Canvas.Top="402" Content="Заказ" x:Name="Order" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Order_Click"/>
+        <Button Height="38" Width="132" Canvas.Left="521" Canvas.Top="402" Content="Склад" x:Name="Sklad" HorizontalAlignment="Left" VerticalAlignment="Center" Click="Sklad_Click"/>
+    </Canvas>
+</Window>
